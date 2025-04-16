@@ -22,3 +22,4 @@ dependencyResolutionManagement {
 rootProject.name = "RecipieBuddy"
 include(":app")
  
+# Settings Gradle
