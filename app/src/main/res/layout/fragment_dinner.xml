@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.Dinner"
+    android:orientation="vertical">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:shimmer_auto_start="true">
+
+        <!-- Add your placeholder views here -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <View
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder" />
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="20dp"-->
+                    <!--                android:background="@color/shimmer_placeholder" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <View
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder" />
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="20dp"-->
+                    <!--                android:background="@color/shimmer_placeholder" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <View
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder" />
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="20dp"-->
+                    <!--                android:background="@color/shimmer_placeholder" />-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:weightSum="2">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder"
+                        android:layout_marginHorizontal="10dp"/>
+
+                    <View
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@color/shimmer_placeholder" />
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="20dp"-->
+                    <!--                android:background="@color/shimmer_placeholder" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        />
+
+</LinearLayout>

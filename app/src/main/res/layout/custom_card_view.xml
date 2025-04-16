@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:background="@drawable/ripple_effect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/r_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:visibility="gone"/>
+        <ImageView
+            android:id="@+id/card_img_view"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_marginEnd="10dp"/>
+        <TextView
+            android:id="@+id/card_person_name"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Rahim"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

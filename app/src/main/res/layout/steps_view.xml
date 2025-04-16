@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/border">
+
+    <TextView
+        android:id="@+id/steps_number"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@color/primary_light"
+        android:padding="10dp"
+        android:layout_height="match_parent"/>
+
+        <TextView
+            android:minHeight="100dp"
+            android:layout_weight="1"
+            android:id="@+id/steps_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ssss"
+            android:textSize="20sp"
+            />
+    <LinearLayout
+        android:background="@color/primary_light"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:gravity="center">
+        <ImageView
+            android:background="@drawable/ripple_effect2"
+            android:layout_gravity="center"
+            android:id="@+id/timer_btn"
+            android:layout_weight="3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_timer_24"/>
+        <ImageView
+            android:background="@drawable/ripple_effect2"
+            android:layout_gravity="center"
+            android:id="@+id/timer_btn_cancel"
+            android:layout_weight="3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_timer_off_24"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:background="@drawable/ripple_effect3"
+            android:layout_gravity="center"
+            android:id="@+id/timer_btn_video"
+            android:layout_weight="3"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_smart_display_24"
+            android:visibility="visible"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/step_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0min"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

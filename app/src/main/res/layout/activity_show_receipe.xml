@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".pages.ShowReceipe"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/sr_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="vorta"
+            android:textSize="35sp"
+            android:textStyle="italic|bold"
+            android:layout_marginBottom="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/r_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/b1"
+            android:layout_below="@+id/sr_title"
+            />
+        <TextView
+            android:id="@+id/ing_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingridients"
+            android:layout_below="@+id/r_photo"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/ing_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10-inch cast iron or oven-safe nonstick skillet, Measuring cups and spoons, Whisk, Large bowl, Small microwave-safe bowl, Spatula"
+            android:layout_below="@+id/ing_head"
+            android:textSize="20sp"/>
+        <TextView
+            android:id="@+id/steps_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steps"
+            android:layout_below="@+id/ing_txt"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/steps_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/steps_head"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@color/primary_light">
+
+
+            <!-- Input Field -->
+            <EditText
+                android:id="@+id/et_comment_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Write a comment..."
+                android:background="@drawable/rounded_edit_text"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:inputType="text" />
+
+            <!-- Send Button -->
+            <ImageButton
+                android:id="@+id/btn_send_comment"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/baseline_send_24"
+                android:background="@android:color/transparent"
+                android:contentDescription="Send" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Comment Section -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

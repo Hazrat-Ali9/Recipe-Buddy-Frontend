@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary">#b7ce63</color>
+    <color name="primary_light">#c7d59f</color>
+    <color name="primary_dark">#8fb339</color>
+    <color name="shimmer_placeholder">#E0E0E0</color> <!-- Light gray -->
+
+</resources>
